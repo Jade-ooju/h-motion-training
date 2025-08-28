@@ -5,7 +5,7 @@ import glob
 from sklearn.preprocessing import MinMaxScaler
 
 # --- 설정 변수 ---
-DATA_DIRECTORY = "Data"
+DATA_DIRECTORY = "../Data"
 MAX_SEQUENCE_LENGTH = 300
 
 # 동작(동사) 라벨을 숫자로 매핑

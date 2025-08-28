@@ -8,7 +8,7 @@ import glob
 # JSON 파일들이 저장된 폴더 경로를 지정하세요.
 # 예: "C:/MyProject/UnityData"
 # 현재 스크립트와 같은 폴더에 'data' 폴더가 있다고 가정합니다.
-DATA_DIRECTORY = "Data"
+DATA_DIRECTORY = "../Data"
 
 # 모든 시퀀스의 길이를 통일하기 위한 최대 프레임 수
 # (예: 5초 * 60fps = 300)
@@ -145,7 +145,7 @@ def preprocess_data():
     print("정규화 완료. 모든 특징 값이 0과 1 사이로 조정되었습니다.")
 
     # --- 6. 데이터 저장 ---
-    output_filename = "preprocessed_data.npz"
+    output_filename = "../preprocessed_data.npz"
     np.savez_compressed(output_filename, X=X_data, y=y_data)
 
     print(f"\n전처리 완료! '{output_filename}' 파일에 데이터가 저장되었습니다.")

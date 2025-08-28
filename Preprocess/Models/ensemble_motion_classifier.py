@@ -17,7 +17,7 @@ plt.rcParams['axes.unicode_minus'] = False
 print("🚀 앙상블 모델 생성기")
 print("=" * 50)
 
-data = np.load("preprocessed_data.npz")
+data = np.load("../preprocessed_data.npz")
 X = data['X']
 y = data['y']
 
@@ -192,7 +192,7 @@ if best_model_name == 'Ensemble':
             plt.text(j, i, str(cm[i, j]), ha='center', va='center')
 
 plt.tight_layout()
-plt.savefig('ensemble_model_results.png', dpi=300, bbox_inches='tight')
+plt.savefig('../Outputs/ensemble_model_results.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # --- 9. 모델 저장 ---
