@@ -8,6 +8,8 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.feature_selection import SelectKBest, f_classif
 import json
 import matplotlib.pyplot as plt
+import os
+import glob
 
 # 한글 폰트 설정
 plt.rcParams['font.family'] = 'DejaVu Sans'
@@ -23,6 +25,31 @@ y = data['y']
 
 print(f"📊 데이터 형태: {X.shape}")
 print(f"📊 클래스 분포: {np.bincount(y)}")
+print(f"📊 고유 클래스: {np.unique(y)}")
+
+# 클래스 검증
+unique_classes = np.unique(y)
+if len(unique_classes) < 2:
+    print(f"❌ 에러: 최소 2개의 클래스가 필요하지만 {len(unique_classes)}개만 발견되었습니다!")
+    print(f"   발견된 클래스: {unique_classes}")
+    print(f"   클래스별 샘플 수: {np.bincount(y)}")
+    
+    # 데이터 폴더에서 실제 파일들을 확인
+    data_dir = "../Data"
+    if os.path.exists(data_dir):
+        json_files = glob.glob(os.path.join(data_dir, "*.json"))
+        print(f"\n📁 데이터 폴더에서 발견된 파일들:")
+        for file_path in json_files[:10]:  # 처음 10개만 출력
+            filename = os.path.basename(file_path)
+            print(f"   - {filename}")
+        if len(json_files) > 10:
+            print(f"   ... 및 {len(json_files) - 10}개 더")
+    
+    print("\n💡 해결 방법:")
+    print("   1. 데이터 전처리를 다시 실행하세요: python Core/data_preprocessor.py")
+    print("   2. 데이터 폴더에 다양한 클래스의 JSON 파일이 있는지 확인하세요")
+    print("   3. 파일명이 올바른 형식인지 확인하세요 (예: Pick_001.json, Hold_001.json, Place_001.json)")
+    exit(1)
 
 # 시계열 데이터를 통계값으로 압축
 print("\n🔄 시계열 데이터를 통계값으로 압축...")

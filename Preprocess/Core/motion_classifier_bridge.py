@@ -3,6 +3,7 @@
 """
 Unity Python Bridge for Motion Classification
 Unity에서 전송된 관절 데이터를 받아 동작을 분류하는 Python 브리지
+Gaze_Hold_010.json 형식 지원 및 향상된 특징 처리
 """
 
 import json
@@ -15,14 +16,16 @@ from typing import Dict, List, Tuple, Optional
 class UnityPythonBridge:
     """Unity와 통신하여 동작을 분류하는 Python 브리지"""
     
-    def __init__(self, model_path: str = "../Models/best_random_forest_model.pkl", 
-                 feature_info_path: str = "../Models/ensemble_features.json"):
+    def __init__(self, model_path: str = "best_gradient_boosting_model.pkl", 
+                 feature_info_path: str = "ensemble_feature_selection_info.json",
+                 use_enhanced_features: bool = True):
         """
         Python 브리지 초기화
         
         Args:
             model_path: 훈련된 Random Forest 모델 파일 경로
             feature_info_path: 특징 선택 정보 파일 경로
+            use_enhanced_features: 향상된 특징 사용 여부
         """
         try:
             # 모델 로드
@@ -36,14 +39,20 @@ class UnityPythonBridge:
                 self.feature_info = json.load(f)
             print(f"✅ 특징 선택 정보 로드 완료")
             
+            # 향상된 특징 사용 여부 설정
+            self.use_enhanced_features = use_enhanced_features
+            
             # 라벨 매핑
             self.label_map = {0: "Hold", 1: "Pick", 2: "Place"}
             self.reverse_label_map = {v: k for k, v in self.label_map.items()}
             
             print(f"🎯 동작 분류 준비 완료!")
             print(f"   - 모델: {type(self.model).__name__}")
-            print(f"   - 특징 수: {self.feature_info['n_features']}")
+            print(f"   - 총 특징 수: {self.feature_info['total_features']}")
             print(f"   - 선택된 특징: {len(self.feature_info['selected_features'])}")
+            print(f"   - 압축률: {self.feature_info['compression_ratio']:.1%}")
+            print(f"   - 모델 정확도: {self.feature_info['best_accuracy']:.1%}")
+            print(f"   - 향상된 특징 사용: {self.use_enhanced_features}")
             
         except Exception as e:
             print(f"❌ 초기화 오류: {e}")
@@ -95,180 +104,204 @@ class UnityPythonBridge:
             # joints 데이터가 없는 경우 0으로 채움 (26 joints * 7 values)
             flat_data.extend([0] * 26 * 7)
         
-        # Gaze Target Position (x, y, z) - 현재는 없으므로 0으로 채움
+        # Gaze Target Position (x, y, z) - 현재는 0으로 초기화
         # 향후 시선 데이터가 추가되면 여기서 처리
         flat_data.extend([0, 0, 0])
         
         return flat_data
     
-    def compress_sequence(self, sequence: List[List[float]]) -> np.ndarray:
+    def flatten_frame_with_gaze(self, frame: Dict, session_data: Dict) -> List[float]:
         """
-        시계열 데이터를 통계값으로 압축
+        시선 데이터를 포함한 향상된 프레임 평탄화
         
         Args:
-            sequence: 시계열 데이터 (프레임들의 리스트)
+            frame: 프레임 데이터
+            session_data: 세션 전체 데이터 (interactionTargetPosition 등 포함)
             
         Returns:
-            압축된 특징 벡터
+            향상된 특징을 포함한 평탄화된 벡터
         """
-        if not sequence:
-            return np.zeros(self.feature_info['n_features'])
+        # 기본 관절 데이터 평탄화
+        flat_data = self.flatten_frame(frame)
         
-        # numpy 배열로 변환
-        data = np.array(sequence)
+        # 시선 데이터 추가 (interactionTargetPosition)
+        if 'interactionTargetPosition' in session_data:
+            target_pos = session_data['interactionTargetPosition']
+            # 기존 gaze 데이터를 실제 target position으로 교체
+            flat_data[-3:] = [target_pos.get('x', 0), target_pos.get('y', 0), target_pos.get('z', 0)]
         
-        # 각 특징에 대해 통계값 계산
-        compressed_features = []
+        # 추가 특징들
+        additional_features = []
         
-        for i in range(data.shape[1]):
-            feature_values = data[:, i]
-            compressed_features.extend([
-                np.mean(feature_values),    # 평균
-                np.std(feature_values),     # 표준편차
-                np.max(feature_values),     # 최대값
-                np.min(feature_values)      # 최소값
-            ])
+        # 타임스탬프 정보
+        if 'timestamp' in frame:
+            timestamp = frame['timestamp']
+            additional_features.append(timestamp)
         
-        return np.array(compressed_features)
+        # 오른손/왼손 정보
+        if 'isRightHand' in frame:
+            additional_features.append(1.0 if frame['isRightHand'] else 0.0)
+        
+        # 관절 신뢰도 평균
+        if 'joints' in frame and frame['joints']:
+            confidences = [joint.get('confidence', 0.0) for joint in frame['joints']]
+            avg_confidence = np.mean(confidences) if confidences else 0.0
+            additional_features.append(avg_confidence)
+        
+        # 추가 특징을 flat_data에 확장
+        flat_data.extend(additional_features)
+        
+        return flat_data
     
-    def select_features(self, compressed_data: np.ndarray) -> np.ndarray:
+    def preprocess_input_data(self, input_data: Dict) -> np.ndarray:
         """
-        특징 선택을 통해 최적의 특징만 선택
+        Unity에서 전송된 입력 데이터를 전처리
         
         Args:
-            compressed_data: 압축된 특징 벡터
+            input_data: Unity에서 전송된 JSON 데이터
             
         Returns:
-            선택된 특징만 포함된 벡터
-        """
-        selected_indices = self.feature_info['selected_features']
-        return compressed_data[selected_indices]
-    
-    def predict_motion(self, sequence_data: List[Dict]) -> Tuple[str, np.ndarray, float]:
-        """
-        시계열 관절 데이터로부터 동작을 예측
-        
-        Args:
-            sequence_data: 시계열 관절 데이터 (프레임들의 리스트)
-            
-        Returns:
-            (예측된 동작, 확률 분포, 신뢰도)
+            전처리된 특징 벡터
         """
         try:
-            # 1. 각 프레임을 평탄화
-            flattened_frames = [self.flatten_frame(frame) for frame in sequence_data]
+            if 'frames' not in input_data:
+                raise ValueError("입력 데이터에 'frames' 필드가 없습니다.")
             
-            # 2. 시계열 데이터를 통계값으로 압축
-            compressed_features = self.compress_sequence(flattened_frames)
+            # 향상된 특징 사용 여부에 따라 다른 평탄화 함수 사용
+            if self.use_enhanced_features:
+                sequence = [self.flatten_frame_with_gaze(frame, input_data) for frame in input_data["frames"]]
+            else:
+                sequence = [self.flatten_frame(frame) for frame in input_data["frames"]]
             
-            # 3. 특징 선택
-            selected_features = self.select_features(compressed_features)
+            # 시퀀스 길이 통일 (MAX_SEQUENCE_LENGTH = 300)
+            MAX_SEQUENCE_LENGTH = 300
+            if len(sequence) > MAX_SEQUENCE_LENGTH:
+                sequence = sequence[:MAX_SEQUENCE_LENGTH]
+            elif len(sequence) < MAX_SEQUENCE_LENGTH:
+                # 부족한 프레임은 마지막 프레임으로 패딩
+                last_frame = sequence[-1] if sequence else [0] * len(sequence[0]) if sequence else [0] * 185
+                while len(sequence) < MAX_SEQUENCE_LENGTH:
+                    sequence.append(last_frame.copy())
             
-            # 4. 모델 예측
-            prediction = self.model.predict([selected_features])[0]
-            probabilities = self.model.predict_proba([selected_features])[0]
+            # numpy 배열로 변환
+            sequence_array = np.array(sequence, dtype=np.float32)
             
-            # 5. 결과 변환
-            predicted_motion = self.label_map[prediction]
-            confidence = np.max(probabilities)
+            # 차원 확인 및 조정
+            if len(sequence_array.shape) == 2:
+                # (frames, features) -> (1, frames, features)
+                sequence_array = sequence_array.reshape(1, -1, sequence_array.shape[1])
             
-            return predicted_motion, probabilities, confidence
+            return sequence_array
+            
+        except Exception as e:
+            print(f"❌ 데이터 전처리 오류: {e}")
+            raise
+    
+    def predict_motion(self, input_data: Dict) -> Dict:
+        """
+        Unity에서 전송된 데이터로 동작을 예측
+        
+        Args:
+            input_data: Unity에서 전송된 JSON 데이터
+            
+        Returns:
+            예측 결과 딕셔너리
+        """
+        try:
+            # 입력 데이터 전처리
+            X = self.preprocess_input_data(input_data)
+            
+            # 모델 예측
+            prediction = self.model.predict(X)
+            probabilities = self.model.predict_proba(X)
+            
+            # 결과 해석
+            predicted_label = int(prediction[0])
+            predicted_motion = self.label_map[predicted_label]
+            confidence_scores = probabilities[0].tolist()
+            
+            # 결과 반환
+            result = {
+                "predicted_motion": predicted_motion,
+                "predicted_label": predicted_label,
+                "confidence_scores": confidence_scores,
+                "confidence_per_motion": {
+                    "Hold": confidence_scores[1],  # Hold는 라벨 1
+                    "Pick": confidence_scores[0],  # Pick은 라벨 0
+                    "Place": confidence_scores[2]  # Place는 라벨 2
+                },
+                "input_features_shape": X.shape,
+                "processing_info": {
+                    "use_enhanced_features": self.use_enhanced_features,
+                    "n_frames": X.shape[1],
+                    "n_features": X.shape[2]
+                }
+            }
+            
+            return result
             
         except Exception as e:
             print(f"❌ 예측 오류: {e}")
-            return "Error", np.array([0, 0, 0]), 0.0
-    
-    def get_model_info(self) -> Dict:
-        """모델 정보 반환"""
-        return {
-            "model_type": type(self.model).__name__,
-            "n_features": self.feature_info['n_features'],
-            "n_selected_features": len(self.feature_info['selected_features']),
-            "labels": list(self.label_map.values()),
-            "feature_selection_method": self.feature_info.get('method', 'SelectKBest')
-        }
-    
-    def test_prediction(self):
-        """테스트 예측 수행"""
-        print("\n🧪 테스트 예측 수행...")
-        
-        # 테스트 데이터 생성 (Hold 동작 시뮬레이션)
-        test_sequence = []
-        for i in range(30):  # 30 프레임
-            frame = {
-                "joints": [
-                    {
-                        "jointName": "Wrist",
-                        "position": {"x": 0.1 + i*0.001, "y": 0.2, "z": 0.3},
-                        "rotation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}
-                    },
-                    {
-                        "jointName": "ForearmWrist",
-                        "position": {"x": 0.1 + i*0.001, "y": 0.2, "z": 0.3},
-                        "rotation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}
-                    }
-                    # ... 다른 관절들도 비슷하게 생성
-                ]
+            return {
+                "error": str(e),
+                "predicted_motion": "Unknown",
+                "confidence_scores": [0, 0, 0]
             }
-            test_sequence.append(frame)
+    
+    def test_with_sample_data(self):
+        """샘플 데이터로 모델 테스트"""
+        print("\n🧪 샘플 데이터로 모델 테스트...")
         
-        # 예측 수행
-        motion, probs, conf = self.predict_motion(test_sequence)
-        
-        print(f"🎯 예측 결과:")
-        print(f"   - 동작: {motion}")
-        print(f"   - 확률: Hold={probs[0]:.2f}, Pick={probs[1]:.2f}, Place={probs[2]:.2f}")
-        print(f"   - 신뢰도: {conf:.2f}")
-        
-        return motion, probs, conf
-
-def main():
-    """메인 함수 - Unity와의 통신 처리"""
-    try:
-        print("🚀 Unity Python Bridge 시작...")
-        
-        # 브리지 초기화
-        bridge = UnityPythonBridge()
-        
-        # 테스트 예측 수행
-        bridge.test_prediction()
-        
-        print("\n✅ Python Bridge 초기화 완료!")
-        print("🔄 Unity에서 데이터를 전송하면 동작을 분류합니다...")
-        
-        # Unity와의 통신 대기 (실제 구현에서는 표준 입출력 또는 소켓 사용)
-        while True:
-            try:
-                # Unity에서 전송된 데이터 읽기
-                input_data = input().strip()
-                
-                if input_data.lower() == 'quit':
-                    break
-                
-                # JSON 데이터 파싱
-                data = json.loads(input_data)
-                
-                # 동작 예측
-                motion, probs, conf = bridge.predict_motion(data['sequence'])
-                
-                # 결과를 Unity로 전송
-                result = {
-                    "motion": motion,
-                    "probabilities": probs.tolist(),
-                    "confidence": float(conf)
+        # 테스트용 샘플 데이터 (Gaze_Hold_010.json 형식)
+        sample_data = {
+            "sessionId": "test-session",
+            "startTime": "2025-01-01 00:00:00",
+            "interactionTargetObject": "TestObject",
+            "interactionTargetPosition": {"x": 0.1, "y": 0.2, "z": 0.3},
+            "frames": [
+                {
+                    "timestamp": 0.0,
+                    "isRightHand": True,
+                    "joints": [
+                        {
+                            "jointName": "Wrist",
+                            "position": {"x": 0.1, "y": 0.1, "z": 0.1},
+                            "rotation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0},
+                            "confidence": 1.0
+                        }
+                    ]
                 }
-                
-                print(json.dumps(result))
-                
-            except json.JSONDecodeError:
-                print(json.dumps({"error": "Invalid JSON format"}))
-            except Exception as e:
-                print(json.dumps({"error": str(e)}))
-                
-    except KeyboardInterrupt:
-        print("\n👋 Python Bridge 종료")
+            ]
+        }
+        
+        try:
+            result = self.predict_motion(sample_data)
+            print(f"✅ 테스트 성공!")
+            print(f"   예측된 동작: {result['predicted_motion']}")
+            print(f"   신뢰도: {result['confidence_per_motion']}")
+            print(f"   입력 특징 형태: {result['input_features_shape']}")
+            
+        except Exception as e:
+            print(f"❌ 테스트 실패: {e}")
+
+# 메인 실행 함수
+def main():
+    """메인 실행 함수"""
+    print("🚀 Unity Python Bridge for Motion Classification")
+    print("=" * 60)
+    
+    try:
+        # 브리지 초기화
+        bridge = UnityPythonBridge(use_enhanced_features=True)
+        
+        # 샘플 데이터로 테스트
+        bridge.test_with_sample_data()
+        
+        print("\n🎯 브리지가 성공적으로 초기화되었습니다!")
+        print("Unity에서 JSON 데이터를 전송하면 동작을 분류할 수 있습니다.")
+        
     except Exception as e:
-        print(f"❌ 오류 발생: {e}")
+        print(f"❌ 브리지 초기화 실패: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

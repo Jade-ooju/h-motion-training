@@ -6,9 +6,10 @@ import glob
 
 # --- 1. 설정 변수 정의 ---
 # JSON 파일들이 저장된 폴더 경로를 지정하세요.
-# 예: "C:/MyProject/UnityData"
 # 현재 스크립트와 같은 폴더에 'data' 폴더가 있다고 가정합니다.
-DATA_DIRECTORY = "../Data"
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+DATA_DIRECTORY = os.path.join(script_dir, "..", "Data")
 
 # 모든 시퀀스의 길이를 통일하기 위한 최대 프레임 수
 # (예: 5초 * 60fps = 300)
@@ -17,7 +18,25 @@ MAX_SEQUENCE_LENGTH = 300
 # 동작(동사) 라벨을 숫자로 매핑
 LABEL_MAP = {"Pick": 0, "Hold": 1, "Place": 2}
 
-# --- 2. 데이터 평탄화 함수 ---
+# --- 2. 파일명에서 라벨 추출 함수 ---
+def extract_label_from_filename(filename):
+    """
+    파일명에서 동작 라벨을 추출합니다.
+    지원 형식:
+    - Hold_001.json -> Hold
+    - Gaze_Hold_010.json -> Hold
+    - Pick_002.json -> Pick
+    - Place_003.json -> Place
+    """
+    # Gaze_ 접두사가 있는 경우 제거
+    if filename.startswith("Gaze_"):
+        filename = filename[5:]  # "Gaze_" 제거
+    
+    # 첫 번째 언더스코어 이전의 부분을 라벨로 사용
+    label_str = filename.split('_')[0]
+    return label_str
+
+# --- 3. 데이터 평탄화 함수 ---
 def flatten_frame(frame):
     """단일 프레임의 모든 관절/시선 데이터를 1차원 벡터로 변환합니다."""
     flat_data = []
@@ -76,24 +95,93 @@ def flatten_frame(frame):
 # --- 3. 메인 전처리 로직 ---
 def preprocess_data():
     """데이터 폴더에서 모든 JSON을 읽어 전처리를 수행합니다."""
+    # 디버깅: 경로 정보 출력
+    current_dir = os.getcwd()
+    data_dir = os.path.abspath(DATA_DIRECTORY)
+    print(f"📁 현재 작업 디렉토리: {current_dir}")
+    print(f"📁 데이터 디렉토리: {data_dir}")
+    print(f"📁 상대 경로: {DATA_DIRECTORY}")
+    
     json_files = glob.glob(os.path.join(DATA_DIRECTORY, "*.json"))
+    
+    # 디버깅: 찾은 파일들 출력
+    print(f"🔍 검색 패턴: {os.path.join(DATA_DIRECTORY, '*.json')}")
+    print(f"📄 찾은 JSON 파일들:")
+    for i, file_path in enumerate(json_files):
+        print(f"   {i+1:2d}. {file_path}")
     
     all_sequences = []
     all_labels = []
     num_features = -1
 
-    print(f"총 {len(json_files)}개의 JSON 파일을 찾았습니다. 전처리를 시작합니다...")
+    print(f"\n총 {len(json_files)}개의 JSON 파일을 찾았습니다. 전처리를 시작합니다...")
+    
+    if len(json_files) == 0:
+        print("❌ JSON 파일을 찾을 수 없습니다!")
+        print("   - 데이터 디렉토리가 존재하는지 확인하세요")
+        print("   - 파일 확장자가 .json인지 확인하세요")
+        print("   - 경로 설정을 확인하세요")
+        return
+
+    # 디버깅: 파일별 라벨 정보 출력
+    print("\n🔍 파일별 라벨 추출 정보:")
+    for file_path in json_files[:20]:  # 처음 20개만 출력
+        filename = os.path.basename(file_path)
+        label_str = extract_label_from_filename(filename)
+        if label_str in LABEL_MAP:
+            print(f"   {filename} -> {label_str} -> {LABEL_MAP[label_str]}")
+        else:
+            print(f"   {filename} -> {label_str} -> ❌ 알 수 없는 라벨")
+    
+    if len(json_files) > 20:
+        print(f"   ... 및 {len(json_files) - 20}개 더")
+    
+    # 라벨별 파일 개수 확인
+    label_counts = {}
+    for file_path in json_files:
+        filename = os.path.basename(file_path)
+        label_str = extract_label_from_filename(filename)
+        if label_str in LABEL_MAP:
+            label_num = LABEL_MAP[label_str]
+            label_counts[label_num] = label_counts.get(label_num, 0) + 1
+        else:
+            print(f"⚠️ 알 수 없는 라벨: {filename} -> {label_str}")
+    
+    print(f"\n📊 라벨별 파일 개수:")
+    for label_num, count in sorted(label_counts.items()):
+        label_name = [k for k, v in LABEL_MAP.items() if v == label_num][0]
+        print(f"   {label_name} (클래스 {label_num}): {count}개")
 
     for file_path in json_files:
-        # 파일명에서 라벨 추출 (예: 'Pick_001.json' -> 'Pick')
-        label_str = os.path.basename(file_path).split('_')[0]
+        # 파일명에서 라벨 추출 (Gaze_ 접두사 지원)
+        label_str = extract_label_from_filename(os.path.basename(file_path))
         if label_str not in LABEL_MAP:
+            print(f"   ⚠️ 알 수 없는 라벨 '{label_str}' 파일 건너뛰기: {os.path.basename(file_path)}")
             continue
         
+        print(f"   📁 처리 중: {os.path.basename(file_path)} -> {label_str}")
         all_labels.append(LABEL_MAP[label_str])
         
-        with open(file_path, 'r') as f:
-            data = json.load(f)
+        try:
+            # UTF-8 BOM을 자동으로 처리하기 위해 utf-8-sig 사용
+            with open(file_path, 'r', encoding='utf-8-sig') as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            print(f"   ❌ JSON 파싱 오류: {os.path.basename(file_path)} - {e}")
+            # 손상된 파일은 건너뛰기
+            all_labels.pop()  # 추가했던 라벨 제거
+            continue
+        except Exception as e:
+            print(f"   ❌ 파일 읽기 오류: {os.path.basename(file_path)} - {e}")
+            # 오류가 있는 파일은 건너뛰기
+            all_labels.pop()  # 추가했던 라벨 제거
+            continue
+        
+        # frames 데이터가 있는지 확인
+        if "frames" not in data or not data["frames"]:
+            print(f"   ⚠️ frames 데이터 없음: {os.path.basename(file_path)}")
+            all_labels.pop()  # 추가했던 라벨 제거
+            continue
         
         sequence = [flatten_frame(frame) for frame in data["frames"]]
         
