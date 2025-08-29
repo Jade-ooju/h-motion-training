@@ -1,0 +1,5280 @@
+{
+    "sessionId": "1bd6af0f-57de-4d53-b3b7-cf5274f6476a",
+    "startTime": "2025-08-28 10:49:00",
+    "interactionTargetObject": "Cup_A",
+    "interactionTargetPosition": {
+        "x": 0.036191001534461978,
+        "y": -0.313400000333786,
+        "z": 0.4390000104904175
+    },
+    "frames": [
+        {
+            "timestamp": 3.003432035446167,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.0383243560791017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.0732274055480959,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.107217311859131,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.141505479812622,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.175341844558716,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.2095236778259279,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.243647813796997,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.277540683746338,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.312037706375122,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.3463244438171388,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.380119562149048,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.4152772426605226,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.450223207473755,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.483950138092041,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.5173587799072267,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.5510478019714357,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.585716485977173,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.6203107833862306,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.6554975509643556,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.6891236305236818,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.723576545715332,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.757222890853882,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.792469024658203,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.8264577388763429,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.860853672027588,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.8949692249298097,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.928828001022339,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.963031053543091,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 3.998060941696167,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.032108306884766,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.066227912902832,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.099304676055908,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.134631156921387,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.168846130371094,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.202263832092285,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.236552715301514,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.271617889404297,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.3050336837768559,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.33976936340332,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.37490701675415,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.4087233543396,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.442565441131592,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.476205348968506,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.509871959686279,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.544265270233154,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.578372955322266,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.61204719543457,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.645675182342529,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.679909706115723,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.7129669189453129,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.748012542724609,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.782306671142578,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.816249370574951,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.850754737854004,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.88472318649292,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.918469429016113,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.9518208503723148,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 4.986364364624023,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.019756317138672,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.05294132232666,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.087033271789551,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.120891094207764,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.154500484466553,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.188636779785156,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.223504543304443,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.257082462310791,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.290705680847168,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.3249053955078129,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.358705043792725,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.392829895019531,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.427239894866943,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.461453914642334,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.495563507080078,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.530428886413574,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.564002513885498,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.598138809204102,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.633182048797607,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.666261196136475,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.70052433013916,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.734438896179199,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.768332004547119,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.802443027496338,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.836069107055664,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.869976043701172,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.904047966003418,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.937564849853516,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 5.972050666809082,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.0063557624816898,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.04094123840332,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.0758771896362309,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.109818458557129,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.143657684326172,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.178472518920898,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.212641716003418,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.247236251831055,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.281676292419434,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.317248821258545,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.351199626922607,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.386441230773926,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.4212446212768559,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.455176830291748,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.489437103271484,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.5231499671936039,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.556345462799072,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.591195106506348,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.6259355545043949,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.659399032592773,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.693973064422607,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.727977275848389,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.762167930603027,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.796858787536621,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.830326557159424,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.86527156829834,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.89957332611084,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.933614253997803,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 6.967617034912109,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.002459526062012,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.0365309715271,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.070274353027344,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.105453968048096,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.139841556549072,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.174105167388916,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.207422733306885,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.242170333862305,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.277254581451416,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.311028480529785,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.344250679016113,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.377593517303467,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.411628723144531,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.445241451263428,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.478368759155273,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.512103080749512,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.5459303855896,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.580458164215088,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.614294052124023,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.6475138664245609,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.682289123535156,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.7167510986328129,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.750590801239014,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.78421688079834,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.818535327911377,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.851712703704834,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.885161399841309,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.9190473556518559,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.953634738922119,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 7.987502098083496,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.021544456481934,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.056075096130371,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.089812278747559,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.124512672424317,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.158822059631348,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.193009376525879,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.22742748260498,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.261697769165039,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.29588794708252,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.329194068908692,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.363543510437012,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.398141860961914,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.432647705078125,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.467171669006348,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.501134872436524,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.535417556762696,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.570599555969239,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.606184005737305,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.641489028930664,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.676422119140625,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.711007118225098,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.745474815368653,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.779441833496094,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.8148193359375,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.849008560180664,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.884044647216797,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.917462348937989,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.95241928100586,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 8.985583305358887,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.019448280334473,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.054323196411133,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.088301658630371,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.12306022644043,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.157474517822266,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.191011428833008,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.225454330444336,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.259942054748536,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.293267250061036,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.327746391296387,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.36080265045166,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.394655227661133,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.429008483886719,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.463200569152832,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.497382164001465,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.530508041381836,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.564231872558594,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.59870719909668,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.631732940673829,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.665040969848633,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.699373245239258,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.733917236328125,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.76746654510498,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.800968170166016,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.835399627685547,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.869333267211914,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.903145790100098,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.936981201171875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 9.969992637634278,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.003761291503907,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.038691520690918,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.072550773620606,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.105810165405274,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.1399564743042,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.173935890197754,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.207505226135254,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.241580963134766,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.276713371276856,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.310916900634766,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.345166206359864,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.379385948181153,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.412765502929688,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.447279930114746,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.481017112731934,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.514402389526368,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.548922538757325,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.584074974060059,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.618358612060547,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.65221118927002,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.686116218566895,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.719827651977539,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.753595352172852,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.788110733032227,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.822113990783692,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.856524467468262,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.890799522399903,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.924537658691407,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.95925235748291,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 10.993621826171875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.027323722839356,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.062017440795899,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.096067428588868,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.129737854003907,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.163979530334473,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.198226928710938,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.231858253479004,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.265029907226563,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.299699783325196,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.334023475646973,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.367650032043457,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.400959014892579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.435220718383789,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.469650268554688,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.504375457763672,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.538439750671387,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.572257041931153,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.605948448181153,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.639225959777832,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.67455005645752,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.708656311035157,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.742864608764649,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.777023315429688,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.811921119689942,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.846837043762207,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.88085651397705,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.914982795715332,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.948930740356446,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 11.98324203491211,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.017215728759766,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.052029609680176,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.085938453674317,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.119239807128907,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.152934074401856,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.187437057495118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.221090316772461,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.25444221496582,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.288431167602539,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.322675704956055,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.35725212097168,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.391858100891114,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.4253568649292,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.459975242614746,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.493813514709473,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.528986930847168,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.563499450683594,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.597234725952149,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.630755424499512,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.664838790893555,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.69911003112793,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.733811378479004,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.767707824707032,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.801572799682618,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.834776878356934,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.869172096252442,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.902385711669922,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.93702220916748,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 12.971221923828125,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.004522323608399,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.038580894470215,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.073549270629883,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.107540130615235,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.141031265258789,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.176149368286133,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.209868431091309,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.243659973144532,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.278355598449707,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.312560081481934,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.346907615661621,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.380738258361817,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.414328575134278,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.448614120483399,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.48319149017334,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.516585350036621,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.549812316894532,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.584237098693848,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.61936092376709,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.652822494506836,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.68697452545166,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.720337867736817,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.754335403442383,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.788538932800293,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.823041915893555,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.857322692871094,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.891996383666993,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.925642013549805,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.958974838256836,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 13.993268013000489,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.02752685546875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.061596870422364,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.095630645751954,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.130373001098633,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.164958000183106,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.199674606323243,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.23387622833252,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.26804256439209,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.301783561706543,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.336516380310059,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.371155738830567,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.404967308044434,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.439123153686524,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.473579406738282,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.508049964904786,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.541924476623536,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.575028419494629,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.608824729919434,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.64286994934082,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.67700481414795,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.710979461669922,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.746113777160645,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.779862403869629,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.81367301940918,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.84819507598877,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.882497787475586,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.916736602783204,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.95153522491455,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 14.986489295959473,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.021041870117188,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.05467414855957,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.089407920837403,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.123449325561524,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.156908988952637,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.191651344299317,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.226058959960938,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.259093284606934,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.292360305786133,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.326559066772461,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.361096382141114,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.394336700439454,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.428261756896973,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.462274551391602,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.496967315673829,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.531216621398926,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.565693855285645,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.600757598876954,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.6344633102417,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.66856575012207,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.702751159667969,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.736916542053223,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.770888328552246,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.805527687072754,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.839163780212403,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.873160362243653,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.907739639282227,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.94176197052002,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 15.975377082824707,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.010042190551759,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.043733596801759,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.07805061340332,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.1125545501709,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.146102905273439,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.179981231689454,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.214435577392579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.248334884643556,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.282461166381837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.316844940185548,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.350751876831056,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.38552474975586,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.418994903564454,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.454179763793947,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.488454818725587,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.522167205810548,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.55668067932129,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.59061050415039,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.62491798400879,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.658714294433595,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.69281768798828,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.726327896118165,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.76142120361328,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.795799255371095,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.83042335510254,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.86423110961914,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.898618698120118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.932510375976564,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 16.96625328063965,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.000444412231447,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.034536361694337,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.068830490112306,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.102930068969728,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.137042999267579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.171289443969728,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.205724716186525,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.240070343017579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.27400779724121,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.308547973632814,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.342348098754884,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.3758487701416,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.410757064819337,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.444297790527345,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.47818374633789,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.512975692749025,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.546966552734376,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.580984115600587,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.615198135375978,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.649335861206056,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.68319320678711,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.71630859375,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.750389099121095,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.78360366821289,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.817140579223634,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.85099220275879,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.885963439941408,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.920427322387697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.954118728637697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 17.98712921142578,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.02159309387207,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.055294036865236,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.08936882019043,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.123512268066408,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.157804489135743,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.19122886657715,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.226091384887697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.260406494140626,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.294206619262697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.328819274902345,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.362876892089845,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.396564483642579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.43185043334961,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.4656982421875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.499345779418947,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.53410530090332,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.569120407104493,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.60405158996582,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.63919448852539,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.67327117919922,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.708515167236329,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.742910385131837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.777254104614259,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.811691284179689,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.845172882080079,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.879344940185548,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.914112091064454,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.947895050048829,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 18.981903076171876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.017131805419923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.051054000854493,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.0853271484375,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.120336532592775,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.154052734375,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.188594818115236,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.2236270904541,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.257509231567384,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.292095184326173,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.32714080810547,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.361330032348634,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.395963668823243,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.42986488342285,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.46407699584961,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.49820327758789,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.532922744750978,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.567190170288087,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.601978302001954,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.635568618774415,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.669715881347658,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.70418357849121,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.738698959350587,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.773052215576173,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.807212829589845,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.842023849487306,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.8765926361084,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.910505294799806,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.943986892700197,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 19.97807502746582,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.011150360107423,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.045827865600587,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.07986068725586,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.114715576171876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.149702072143556,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.183279037475587,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.2174072265625,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.252540588378908,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.287208557128908,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.32176399230957,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.355228424072267,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.388370513916017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.423131942749025,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.457988739013673,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.49283790588379,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.52739906311035,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.561689376831056,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.596181869506837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.629533767700197,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.66763687133789,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.701229095458986,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.735763549804689,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.769662857055665,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.803442001342775,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.837778091430665,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.871191024780275,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.9053897857666,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.93907356262207,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 20.9732723236084,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.007051467895509,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.04190444946289,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.076353073120118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.1106014251709,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.145112991333009,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.178674697875978,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.212905883789064,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.24675941467285,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.281780242919923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.316940307617189,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.351917266845704,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.38629722595215,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.419946670532228,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.454730987548829,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.489444732666017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.523433685302736,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.558055877685548,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.592538833618165,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.626995086669923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.66222381591797,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.69575309753418,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.73074722290039,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.765146255493165,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.7987060546875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.832271575927736,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.867292404174806,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.901105880737306,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.93583106994629,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 21.97101402282715,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.004554748535158,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.038572311401368,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.072996139526368,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.107498168945314,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.1412410736084,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.17597198486328,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.211034774780275,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.245086669921876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.27910041809082,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.3126163482666,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.34730339050293,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.38152313232422,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.415401458740236,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.448923110961915,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.48363494873047,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.518674850463868,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.55245590209961,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.58666229248047,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.620351791381837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.654144287109376,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.68950080871582,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.722780227661134,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.756723403930665,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.790159225463868,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.825164794921876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.858421325683595,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.891584396362306,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.926773071289064,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.961193084716798,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 22.9965877532959,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.031070709228517,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.0654354095459,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.100175857543947,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.134374618530275,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.168846130371095,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.202707290649415,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.236448287963868,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.270689010620118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.305376052856447,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.338966369628908,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.373449325561525,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.40717315673828,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.441070556640626,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.475234985351564,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.50873565673828,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.5423641204834,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.57709312438965,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.611038208007814,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.646190643310548,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.680898666381837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.714950561523439,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.74940299987793,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.783599853515626,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.818119049072267,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.852720260620118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.887252807617189,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.921833038330079,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.95563507080078,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 23.990060806274415,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.023406982421876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.05698013305664,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.09168243408203,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.125761032104493,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.160663604736329,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.195091247558595,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.229942321777345,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.264842987060548,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.299222946166993,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.33353042602539,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.368867874145509,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.40361785888672,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.438053131103517,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.472286224365236,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.505491256713868,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.53977394104004,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.574831008911134,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.609764099121095,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.64441680908203,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.67873764038086,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.713315963745118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.747577667236329,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.78218650817871,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.816009521484376,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.849992752075197,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.88434410095215,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.919219970703126,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.95323371887207,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 24.987960815429689,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.022335052490236,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.05607032775879,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.090513229370118,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.125511169433595,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.160472869873048,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.194904327392579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.228713989257814,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.262842178344728,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.297876358032228,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.332048416137697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.366252899169923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.400489807128908,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.435026168823243,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.469362258911134,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.503664016723634,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.5373477935791,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.57158851623535,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.60492515563965,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.638935089111329,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.672937393188478,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.707754135131837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.741249084472658,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.774879455566408,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.810182571411134,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.844724655151368,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.877769470214845,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.91084861755371,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.945348739624025,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 25.97977638244629,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.01416015625,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.047977447509767,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.081605911254884,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.11621856689453,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.149932861328126,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.183900833129884,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.21896743774414,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.252655029296876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.286331176757814,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.31936264038086,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.353130340576173,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.38779640197754,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.421550750732423,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.4570255279541,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.490524291992189,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.523683547973634,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.557559967041017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.59197998046875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.62683868408203,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.660432815551759,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.69414710998535,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.729299545288087,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.76303482055664,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.79705047607422,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.83095932006836,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.864482879638673,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.89876937866211,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.93358039855957,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 26.968059539794923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.002639770507814,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.037883758544923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.071474075317384,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.105527877807618,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.140344619750978,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.174312591552736,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.209068298339845,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.2428035736084,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.276979446411134,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.311067581176759,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.34542465209961,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.378971099853517,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.413297653198243,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.447351455688478,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.481746673583986,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.516403198242189,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.5506649017334,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.584577560424806,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.618650436401368,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.65337371826172,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.68712615966797,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.721195220947267,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.754989624023439,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.789081573486329,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.82374382019043,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.85760498046875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.891225814819337,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.92508888244629,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.959306716918947,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 27.99383544921875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.02788734436035,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.0618896484375,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.095500946044923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.129655838012697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.164033889770509,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.198497772216798,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.233165740966798,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.267202377319337,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.30168914794922,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.336088180541993,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.370174407958986,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.403812408447267,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.438135147094728,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.47188949584961,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.506011962890626,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.539958953857423,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.574167251586915,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.607757568359376,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.641738891601564,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.675809860229493,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.71012306213379,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.744327545166017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.778362274169923,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.812538146972658,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.847585678100587,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.881572723388673,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.914939880371095,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.949024200439454,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 28.98273277282715,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.016542434692384,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.051172256469728,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.084880828857423,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.118864059448243,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.1534423828125,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.187814712524415,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.221378326416017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.256046295166017,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.289369583129884,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.323558807373048,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.357650756835939,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.391496658325197,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.426259994506837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.45998191833496,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.4932804107666,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.527076721191408,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.561227798461915,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.595252990722658,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.629798889160158,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.664485931396486,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.697757720947267,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.731645584106447,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.76540184020996,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.799400329589845,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.83333396911621,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.8667049407959,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.900365829467775,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.934839248657228,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 29.968358993530275,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.00244903564453,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.037107467651368,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.07120132446289,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.105926513671876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.14055633544922,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.17399024963379,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.207637786865236,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.24224281311035,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.276182174682618,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.310680389404298,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.344139099121095,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.37763214111328,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.41204833984375,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.446014404296876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.48008918762207,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.5146427154541,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.54776382446289,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.582151412963868,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.61577796936035,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.65058708190918,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.684650421142579,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.718982696533204,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.75279998779297,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.78662872314453,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.8203067779541,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.855308532714845,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.88900375366211,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.92403221130371,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.958484649658204,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 30.991912841796876,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.025671005249025,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.060096740722658,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.093334197998048,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.12788200378418,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.16282844543457,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.197856903076173,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.232633590698243,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.266950607299806,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.300514221191408,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.3349666595459,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.369157791137697,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.404354095458986,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.439098358154298,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.473514556884767,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.508134841918947,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.542850494384767,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.577234268188478,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.61180877685547,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.64651870727539,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.67975425720215,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.713991165161134,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.748743057250978,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.78321647644043,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.81751823425293,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.851791381835939,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.88692283630371,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.9209041595459,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.95545768737793,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 31.989980697631837,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.02436447143555,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.058563232421878,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.09284210205078,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.12740707397461,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.161861419677737,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.19549560546875,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.23077392578125,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.26599884033203,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.30099105834961,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.33515548706055,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.369319915771487,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.4037971496582,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.43888854980469,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.474220275878909,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.512657165527347,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.546390533447269,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.58024978637695,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.613746643066409,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.647621154785159,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.68175506591797,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.71554946899414,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.75074768066406,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.78463363647461,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.81911849975586,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.853755950927737,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.8881721496582,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.92279815673828,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.95606994628906,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        },
+        {
+            "timestamp": 32.990631103515628,
+            "isRightHand": true,
+            "joints": [],
+            "isTracked": false
+        }
+    ]
+}

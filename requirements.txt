@@ -12,6 +12,10 @@ matplotlib>=3.5.0
 # Data Processing
 scipy>=1.7.0
 
+# ONNX Conversion (for Unity integration)
+onnxmltools>=1.11.0
+onnx>=1.13.0
+
 # Optional: For advanced features
 # tensorflow>=2.8.0  # Uncomment if using deep learning features
 # torch>=1.10.0      # Uncomment if using PyTorch features
