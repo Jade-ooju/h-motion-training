@@ -65,6 +65,12 @@ Preprocess/
 | 파일명 | 설명 | 사용법 |
 |--------|------|--------|
 | `preprocessing_debugger.py` | 전처리 과정 디버깅 및 데이터 품질 확인 | `python Tools/preprocessing_debugger.py` |
+| `h2o_converter.py` | **H2O 데이터셋을 프로젝트 JSON 형식으로 변환** | `python Tools/h2o_converter.py` |
+
+### 🔧 **3. Tools 폴더 (디버깅 및 유틸리티)**
+| 파일명 | 설명 | 사용법 |
+|--------|------|--------|
+| `preprocessing_debugger.py` | 전처리 과정 디버깅 및 데이터 품질 확인 | `python Tools/preprocessing_debugger.py` |
 
 ---
 
@@ -76,6 +82,13 @@ cd h-motion-training/Preprocess
 python Core/data_preprocessor.py
 ```
 **결과:** `preprocessed_data.npz` 파일 생성
+
+### **1.5단계: H2O 데이터셋 변환 (선택사항)**
+```bash
+cd h-motion-training/Preprocess/Tools
+python h2o_converter.py
+```
+**결과:** `Data/` 폴더에 270개 H2O JSON 파일 생성
 
 ### **2단계: 모델 훈련**
 ```bash

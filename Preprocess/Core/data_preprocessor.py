@@ -102,21 +102,47 @@ def preprocess_data():
     print(f"📁 데이터 디렉토리: {data_dir}")
     print(f"📁 상대 경로: {DATA_DIRECTORY}")
     
+    # 기존 JSON 파일들과 H2O JSON 파일들을 모두 찾기
     json_files = glob.glob(os.path.join(DATA_DIRECTORY, "*.json"))
+    h2o_files = glob.glob(os.path.join(DATA_DIRECTORY, "*_h2o_*.json"))
+    
+    # 중복 제거 (H2O 파일이 기존 파일과 겹칠 수 있음)
+    all_files = []
+    existing_names = set()
+    
+    # 먼저 기존 파일들 추가
+    for file_path in json_files:
+        filename = os.path.basename(file_path)
+        if not filename.startswith(("Hold_h2o_", "Pick_h2o_", "Place_h2o_")):
+            all_files.append(file_path)
+            existing_names.add(filename)
+    
+    # H2O 파일들 추가
+    for file_path in h2o_files:
+        filename = os.path.basename(file_path)
+        if filename not in existing_names:
+            all_files.append(file_path)
     
     # 디버깅: 찾은 파일들 출력
-    print(f"🔍 검색 패턴: {os.path.join(DATA_DIRECTORY, '*.json')}")
+    print(f"🔍 검색 패턴: {os.path.join(DATA_DIRECTORY, '*.json')} + {os.path.join(DATA_DIRECTORY, '*_h2o_*.json')}")
     print(f"📄 찾은 JSON 파일들:")
-    for i, file_path in enumerate(json_files):
+    for i, file_path in enumerate(all_files):
         print(f"   {i+1:2d}. {file_path}")
+    
+    # H2O 파일 개수 별도 출력
+    print(f"\n🔍 H2O 데이터셋 파일들:")
+    for i, file_path in enumerate(h2o_files):
+        print(f"   {i+1:2d}. {os.path.basename(file_path)}")
     
     all_sequences = []
     all_labels = []
     num_features = -1
 
-    print(f"\n총 {len(json_files)}개의 JSON 파일을 찾았습니다. 전처리를 시작합니다...")
+    print(f"\n총 {len(all_files)}개의 JSON 파일을 찾았습니다. 전처리를 시작합니다...")
+    print(f"   - 기존 파일: {len(json_files)}개")
+    print(f"   - H2O 파일: {len(h2o_files)}개")
     
-    if len(json_files) == 0:
+    if len(all_files) == 0:
         print("❌ JSON 파일을 찾을 수 없습니다!")
         print("   - 데이터 디렉토리가 존재하는지 확인하세요")
         print("   - 파일 확장자가 .json인지 확인하세요")
@@ -125,7 +151,7 @@ def preprocess_data():
 
     # 디버깅: 파일별 라벨 정보 출력
     print("\n🔍 파일별 라벨 추출 정보:")
-    for file_path in json_files[:20]:  # 처음 20개만 출력
+    for file_path in all_files[:20]:  # 처음 20개만 출력
         filename = os.path.basename(file_path)
         label_str = extract_label_from_filename(filename)
         if label_str in LABEL_MAP:
@@ -133,12 +159,12 @@ def preprocess_data():
         else:
             print(f"   {filename} -> {label_str} -> ❌ 알 수 없는 라벨")
     
-    if len(json_files) > 20:
-        print(f"   ... 및 {len(json_files) - 20}개 더")
+    if len(all_files) > 20:
+        print(f"   ... 및 {len(all_files) - 20}개 더")
     
     # 라벨별 파일 개수 확인
     label_counts = {}
-    for file_path in json_files:
+    for file_path in all_files:
         filename = os.path.basename(file_path)
         label_str = extract_label_from_filename(filename)
         if label_str in LABEL_MAP:
@@ -152,7 +178,7 @@ def preprocess_data():
         label_name = [k for k, v in LABEL_MAP.items() if v == label_num][0]
         print(f"   {label_name} (클래스 {label_num}): {count}개")
 
-    for file_path in json_files:
+    for file_path in all_files:
         # 파일명에서 라벨 추출 (Gaze_ 접두사 지원)
         label_str = extract_label_from_filename(os.path.basename(file_path))
         if label_str not in LABEL_MAP:

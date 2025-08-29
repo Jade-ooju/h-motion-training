@@ -13,6 +13,7 @@ This project implements an ensemble machine learning pipeline for real-time moti
 - **Real-time Processing**: Unity integration bridge for live motion classification
 - **Feature Engineering**: Advanced feature extraction and selection pipeline
 - **High Performance**: 90.91% accuracy on validation data
+- **H2O Dataset Integration**: Convert and integrate H2O motion dataset for enhanced training
 
 ## 🏗️ System Architecture
 
@@ -46,6 +47,8 @@ h-motion-training/
 │   │   └── ensemble_motion_classifier.py # Ensemble model training
 │   ├── Data/                          # Training data (JSON files)
 │   └── Tools/                         # Utility scripts
+│       └── h2o_converter.py          # H2O dataset converter
+├── H2O_Dataset/                       # H2O motion dataset
 ├── Outputs/                           # Generated models and results
 ├── README.md                          # This file
 └── requirements.txt                   # Python dependencies
@@ -100,6 +103,13 @@ cd Preprocess
 }
 ```
 
+### Supported Data Sources
+- **Custom JSON**: Manually created motion data
+- **H2O Dataset**: Converted from H2O motion dataset (270 files)
+  - Pick actions: 84 files
+  - Hold actions: 114 files  
+  - Place actions: 72 files
+
 ### Supported Joint Names
 - Wrist, ForearmWrist, Palm
 - Thumb: Metacarpal, Proximal, Distal, Tip
@@ -116,12 +126,18 @@ cd Preprocess
 python Core/data_preprocessor.py
 ```
 
-### 2. Model Training
+### 2. H2O Dataset Conversion (Optional)
+```bash
+cd Preprocess/Tools
+python h2o_converter.py
+```
+
+### 3. Model Training
 ```bash
 python Models/ensemble_motion_classifier.py
 ```
 
-### 3. Unity Integration
+### 4. Unity Integration
 ```bash
 python Core/motion_classifier_bridge.py
 ```
@@ -174,15 +190,17 @@ python Core/motion_classifier_bridge.py
 ## 🔮 Future Improvements
 
 ### Short-term
-- [ ] Add more training data for better generalization
+- [x] Add more training data for better generalization (H2O dataset integration)
 - [ ] Implement cross-validation for more reliable performance metrics
 - [ ] Add data augmentation techniques
+- [ ] Test model performance with expanded H2O dataset
 
 ### Long-term
 - [ ] Integrate LSTM/RNN for temporal pattern learning
 - [ ] Implement online learning for continuous improvement
 - [ ] Add support for more motion types
 - [ ] Optimize for edge devices
+- [ ] Explore other motion datasets for further expansion
 
 ## 📝 Technical Notes
 
