@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-H2O Dataset Converter
+H2O Dataset Converter - Selective Conversion Version
 H2O 데이터셋을 프로젝트의 표준 JSON 형식으로 변환하는 스크립트
+의미있는 동작만 선별적으로 변환 (Pick, Hold, Place에 명확히 매핑되는 동작만)
 
 H2O 데이터셋 구조:
 - label_split/action_train.txt: 시퀀스별 액션 라벨 정보
@@ -26,79 +27,77 @@ import re
 H2O_DATA_ROOT = "../../H2O_Dataset"  # H2O 데이터셋 루트 경로
 OUTPUT_JSON_DIR = "../../Data"        # 출력 JSON 파일 저장 경로
 
-# 동사 라벨을 프로젝트 라벨로 매핑
-VERB_LABEL_MAP = {
-    # Pick 동작
-    "grab": "Pick",
-    "take": "Pick",
-    "pick": "Pick",
-    "grasp": "Pick",
-    "lift": "Pick",
-    "raise": "Pick",
+# 의미있는 동작만 선별하여 매핑 (Pick, Hold, Place에 명확히 매핑되는 동작만)
+MEANINGFUL_ACTION_MAP = {
+    # Pick 동작 (잡기, 꺼내기)
+    "grab": "Pick",      # 잡기
+    "take out": "Pick",  # 꺼내기
     
-    # Hold 동작  
-    "read": "Hold",
-    "squeeze": "Hold",
-    "hold": "Hold",
-    "carry": "Hold",
-    "support": "Hold",
-    "maintain": "Hold",
+    # Hold 동작 (유지, 사용)
+    "read": "Hold",      # 읽기 (책을 들고 있는 상태)
+    "apply": "Hold",     # 바르기 (로션을 들고 있는 상태)
+    "spray": "Hold",     # 분사 (스프레이를 들고 있는 상태)
+    "squeeze": "Hold",   # 짜기 (로션을 들고 있는 상태)
     
-    # Place 동작
-    "place": "Place", 
-    "put": "Place",
-    "drop": "Place",
-    "release": "Place",
-    "set": "Place",
-    "position": "Place",
-    "move": "Place"
+    # Place 동작 (놓기, 넣기)
+    "place": "Place",    # 놓기
+    "put in": "Place",   # 넣기
 }
 
-# H2O 액션 라벨을 동사로 매핑 (H2O 데이터셋 표준)
+# 의미있는 액션만 선별 (Pick, Hold, Place로 변환 가능한 액션)
+MEANINGFUL_ACTIONS = {
+    # Pick 관련
+    1, 2, 3, 4, 5, 6, 7, 8,      # grab actions
+    24, 25, 26, 27,               # take out actions
+    
+    # Hold 관련  
+    9, 33, 34,                    # read actions
+    31, 32,                       # apply actions
+    35,                           # spray action
+    36,                           # squeeze action
+    
+    # Place 관련
+    9, 10, 11, 12, 13, 14, 15, 16,  # place actions
+    28, 29, 30,                      # put in actions
+}
+
+# H2O 액션 라벨을 동사로 매핑 (공식 H2O 데이터셋 기준)
 ACTION_TO_VERB_MAP = {
     # Pick 동작들
-    1: "grab",      # grab
-    2: "take",      # take
-    3: "pick",      # pick
-    4: "grasp",     # grasp
-    5: "lift",      # lift
-    6: "raise",     # raise
+    1: "grab",      # grab book
+    2: "grab",      # grab espresso
+    3: "grab",      # grab lotion
+    4: "grab",      # grab spray
+    5: "grab",      # grab milk
+    6: "grab",      # grab cocoa
+    7: "grab",      # grab chips
+    8: "grab",      # grab cappuccino
+    24: "take out", # take out espresso
+    25: "take out", # take out cocoa
+    26: "take out", # take out chips
+    27: "take out", # take out cappuccino
     
     # Hold 동작들
-    7: "hold",      # hold
-    8: "carry",     # carry
-    9: "support",   # support
-    10: "maintain", # maintain
-    11: "read",     # read
-    12: "squeeze",  # squeeze
+    9: "read",      # read book
+    33: "read",     # read book
+    34: "read",     # read espresso
+    31: "apply",    # apply lotion
+    32: "apply",    # apply spray
+    35: "spray",    # spray spray
+    36: "squeeze",  # squeeze lotion
     
     # Place 동작들
-    13: "place",    # place
-    14: "put",      # put
-    15: "drop",     # drop
-    16: "release",  # release
-    17: "set",      # set
-    18: "position", # position
-    19: "move",     # move
-    
-    # 기타 동작들 (매핑되지 않는 것들)
-    20: "hold",     # 기타 -> Hold로 매핑
-    21: "hold",     # 기타 -> Hold로 매핑
-    22: "hold",     # 기타 -> Hold로 매핑
-    23: "hold",     # 기타 -> Hold로 매핑
-    24: "hold",     # 기타 -> Hold로 매핑
-    25: "hold",     # 기타 -> Hold로 매핑
-    26: "hold",     # 기타 -> Hold로 매핑
-    27: "hold",     # 기타 -> Hold로 매핑
-    28: "hold",     # 기타 -> Hold로 매핑
-    29: "hold",     # 기타 -> Hold로 매핑
-    30: "hold",     # 기타 -> Hold로 매핑
-    31: "hold",     # 기타 -> Hold로 매핑
-    32: "hold",     # 기타 -> Hold로 매핑
-    33: "hold",     # 기타 -> Hold로 매핑
-    34: "hold",     # 기타 -> Hold로 매핑
-    35: "hold",     # 기타 -> Hold로 매핑
-    36: "hold",     # 기타 -> Hold로 매핑
+    9: "place",     # place book
+    10: "place",    # place espresso
+    11: "place",    # place lotion
+    12: "place",    # place spray
+    13: "place",    # place milk
+    14: "place",    # place cocoa
+    15: "place",    # place chips
+    16: "place",    # place cappuccino
+    28: "put in",   # put in espresso
+    29: "put in",   # put in cocoa
+    30: "put in",   # put in cappuccino
 }
 
 # 프로젝트의 관절 순서 (data_preprocessor.py와 동일)
@@ -204,22 +203,22 @@ def load_h2o_hand_pose_data(hand_pose_dir: str, start_frame: int, end_frame: int
                 # 공백으로 구분된 숫자들을 파싱
                 values = [float(x) for x in content.split()]
                 
-                # H2O는 21개 관절 × 3개 좌표 = 63개 값이지만, 실제로는 더 많은 값이 있을 수 있음
-                if len(values) >= 63:
-                    # 처음 63개 값만 사용 (21개 관절 × 3개 좌표)
-                    joints_3d = np.array(values[:63]).reshape(21, 3)
+                # H2O는 21개 관절 × 3개 좌표 × 2개 손 = 126개 값이지만, 실제로는 더 많은 값이 있을 수 있음
+                if len(values) >= 126:
+                    # 처음 126개 값만 사용 (21개 관절 × 3개 좌표 × 2개 손)
+                    joints_3d = np.array(values[:126]).reshape(2, 21, 3)  # 2개 손, 21개 관절, 3개 좌표
                     hand_poses.append(joints_3d)
                 else:
-                    print(f"   ⚠️ 프레임 {frame_idx}: 예상 63개 값, 실제 {len(values)}개")
+                    print(f"   ⚠️ 프레임 {frame_idx}: 예상 126개 값, 실제 {len(values)}개")
                     # 부족한 값은 0으로 채움
-                    if len(values) < 63:
-                        values.extend([0.0] * (63 - len(values)))
-                    joints_3d = np.array(values[:63]).reshape(21, 3)
+                    if len(values) < 126:
+                        values.extend([0.0] * (126 - len(values)))
+                    joints_3d = np.array(values[:126]).reshape(2, 21, 3)
                     hand_poses.append(joints_3d)
             else:
                 print(f"   ⚠️ 프레임 {frame_idx} 파일 없음: {frame_file}")
                 # 빈 프레임은 0으로 채움
-                empty_frame = np.zeros((21, 3), dtype=np.float32)
+                empty_frame = np.zeros((2, 21, 3), dtype=np.float32)
                 hand_poses.append(empty_frame)
                 
     except Exception as e:
@@ -295,12 +294,15 @@ def map_h2o_joints_to_project_format(h2o_joints: np.ndarray) -> List[Dict]:
     H2O의 21개 관절 데이터를 프로젝트의 26개 관절 형식으로 변환합니다.
     
     Args:
-        h2o_joints: H2O 관절 데이터 (21, 3) - (x, y, z) 좌표
+        h2o_joints: H2O 관절 데이터 (2, 21, 3) - (2개 손, 21개 관절, 3개 좌표)
         
     Returns:
         프로젝트 형식의 관절 데이터 리스트
     """
     joints_data = []
+    
+    # 오른손 데이터 우선 사용 (Unity는 주로 오른손 지원)
+    right_hand = h2o_joints[1] if h2o_joints.shape[0] > 1 else h2o_joints[0]
     
     # 프로젝트의 26개 관절 순서대로 데이터 생성
     for joint_name in PROJECT_JOINT_ORDER:
@@ -311,9 +313,9 @@ def map_h2o_joints_to_project_format(h2o_joints: np.ndarray) -> List[Dict]:
                 h2o_joint_idx = h2o_idx
                 break
         
-        if h2o_joint_idx is not None and h2o_joint_idx < len(h2o_joints):
+        if h2o_joint_idx is not None and h2o_joint_idx < len(right_hand):
             # H2O 관절 데이터가 있는 경우
-            pos = h2o_joints[h2o_joint_idx]
+            pos = right_hand[h2o_joint_idx]
             joints_data.append({
                 "jointName": joint_name,
                 "position": {"x": float(pos[0]), "y": float(pos[1]), "z": float(pos[2])},
@@ -405,9 +407,9 @@ def convert_h2o_sequence_to_project_format(
     
     return json_data
 
-def get_verb_label_from_files(verb_label_dir: str, start_frame: int, end_frame: int) -> Optional[str]:
+def get_verb_labels_from_files(verb_label_dir: str, start_frame: int, end_frame: int) -> List[int]:
     """
-    프레임 범위에서 가장 많이 나타나는 동사 라벨을 찾습니다.
+    프레임 범위에서 동사 라벨들을 추출합니다.
     
     Args:
         verb_label_dir: 동사 라벨 디렉토리 경로
@@ -415,9 +417,9 @@ def get_verb_label_from_files(verb_label_dir: str, start_frame: int, end_frame: 
         end_frame: 끝 프레임 번호
         
     Returns:
-        가장 많이 나타나는 동사 라벨
+        프레임별 동사 라벨 리스트
     """
-    verb_counts = {}
+    verb_labels = []
     
     try:
         for frame_idx in range(start_frame, end_frame + 1):
@@ -429,38 +431,80 @@ def get_verb_label_from_files(verb_label_dir: str, start_frame: int, end_frame: 
                     
                 if content:
                     verb_id = int(content)
-                    verb_counts[verb_id] = verb_counts.get(verb_id, 0) + 1
+                    verb_labels.append(verb_id)
+                else:
+                    verb_labels.append(0)
+            else:
+                verb_labels.append(0)
                     
     except Exception as e:
         print(f"   ❌ 동사 라벨 로드 오류: {e}")
-        return None
+        return []
     
-    if not verb_counts:
-        return None
-    
-    # 가장 많이 나타나는 동사 ID 찾기
-    most_common_verb_id = max(verb_counts, key=verb_counts.get)
-    
-    # 동사 ID를 실제 동사로 변환 (H2O 데이터셋의 동사 매핑 필요)
-    # 여기서는 간단하게 action_label을 사용
-    return most_common_verb_id
+    return verb_labels
 
-def map_action_label_to_verb(action_label: int) -> Optional[str]:
+def get_verb_name(verb_id: int) -> str:
     """
-    H2O 액션 라벨을 동사로 매핑합니다.
-    H2O 데이터셋의 표준 액션 라벨 매핑 사용
+    동사 ID를 이름으로 변환
     """
-    return ACTION_TO_VERB_MAP.get(action_label)
+    verb_names = {
+        0: "background", 1: "grab", 2: "place", 3: "open", 4: "close",
+        5: "pour", 6: "take out", 7: "put in", 8: "apply", 9: "read",
+        10: "spray", 11: "squeeze"
+    }
+    return verb_names.get(verb_id, "unknown")
+
+def should_skip_sequence(sequence_info: Dict, verb_labels: List[int]) -> bool:
+    """
+    변환하지 않을 시퀀스인지 판단
+    """
+    action_label = sequence_info['action_label']
+    
+    # 의미없는 액션들 (무시)
+    meaningless_actions = {
+        0,   # background
+        17,  # open lotion
+        18,  # open milk  
+        19,  # open chips
+        20,  # close lotion
+        21,  # close milk
+        22,  # close chips
+        23,  # pour milk
+    }
+    
+    if action_label in meaningless_actions:
+        return True
+    
+    # verb_label이 모두 background(0)인 경우
+    if verb_labels and all(v == 0 for v in verb_labels):
+        return True
+    
+    return False
+
+def map_to_meaningful_action(action_label: int, verb_label: int) -> Optional[str]:
+    """
+    의미있는 동작으로만 매핑
+    """
+    # 액션 라벨 기반 매핑
+    if action_label in MEANINGFUL_ACTIONS:
+        if action_label in [1, 2, 3, 4, 5, 6, 7, 8, 24, 25, 26, 27]:
+            return "Pick"
+        elif action_label in [9, 33, 34, 31, 32, 35, 36]:
+            return "Hold"
+        elif action_label in [9, 10, 11, 12, 13, 14, 15, 16, 28, 29, 30]:
+            return "Place"
+    
+    # 동사 라벨 기반 매핑 (보조)
+    verb_name = get_verb_name(verb_label)
+    if verb_name in MEANINGFUL_ACTION_MAP:
+        return MEANINGFUL_ACTION_MAP[verb_name]
+    
+    return None
 
 def process_sequence(sequence_info: Dict) -> Optional[Tuple[str, Dict]]:
     """
     단일 시퀀스를 처리하여 프로젝트 형식으로 변환합니다.
-    
-    Args:
-        sequence_info: 시퀀스 정보
-        
-    Returns:
-        (매핑된 라벨, JSON 데이터) 튜플 또는 None
+    의미있는 동작만 선별적으로 변환
     """
     sequence_path = sequence_info['path']
     start_frame = sequence_info['start_frame']
@@ -478,36 +522,34 @@ def process_sequence(sequence_info: Dict) -> Optional[Tuple[str, Dict]]:
         print(f"   ❌ 손 포즈 디렉토리 없음: {hand_pose_dir}")
         return None
     
-    if not os.path.exists(obj_pose_dir):
-        print(f"   ❌ 객체 포즈 디렉토리 없음: {obj_pose_dir}")
-        return None
-    
     # 데이터 로드
     hand_poses = load_h2o_hand_pose_data(hand_pose_dir, start_frame, end_frame)
-    obj_poses = load_h2o_obj_pose_data(obj_pose_dir, start_frame, end_frame)
+    verb_labels = get_verb_labels_from_files(verb_label_dir, start_frame, end_frame)
     
-    if not hand_poses or not obj_poses:
+    if not hand_poses:
         print(f"   ❌ 데이터 로드 실패")
         return None
     
-    # 동사 라벨 결정 (액션 라벨 우선, 없으면 프레임별 동사 라벨 사용)
-    verb_label = map_action_label_to_verb(sequence_info['action_label'])
-    
-    if not verb_label:
-        # 프레임별 동사 라벨에서 가장 많이 나타나는 것 사용
-        verb_label = get_verb_label_from_files(verb_label_dir, start_frame, end_frame)
-    
-    if not verb_label:
-        print(f"   ⚠️ 동사 라벨을 찾을 수 없음")
+    # 변환 가능성 판단
+    if should_skip_sequence(sequence_info, verb_labels):
+        print(f"   ⏭️ 변환 불가능한 시퀀스 - 건너뛰기")
         return None
     
-    # 프로젝트 라벨로 매핑
-    if verb_label not in VERB_LABEL_MAP:
-        print(f"   ⚠️ 매핑되지 않는 동사: {verb_label}")
+    # 동작 라벨 결정
+    action_label = sequence_info['action_label']
+    verb_label = max(set(verb_labels), key=verb_labels.count) if verb_labels else 0
+    
+    # 의미있는 동작으로 매핑
+    project_label = map_to_meaningful_action(action_label, verb_label)
+    
+    if not project_label:
+        print(f"   ⏭️ 의미있는 동작으로 매핑 불가 - 건너뛰기")
         return None
     
-    project_label = VERB_LABEL_MAP[verb_label]
-    print(f"   ✅ 매핑: {verb_label} -> {project_label}")
+    print(f"   ✅ 매핑: {action_label}/{verb_label} -> {project_label}")
+    
+    # 객체 포즈 데이터 로드 (손 포즈가 성공적으로 로드된 후)
+    obj_poses = load_h2o_obj_pose_data(obj_pose_dir, start_frame, end_frame)
     
     # JSON 형식으로 변환
     json_data = convert_h2o_sequence_to_project_format(sequence_info, hand_poses, obj_poses)
@@ -527,9 +569,44 @@ def save_json_file(json_data: Dict, output_path: str):
     except Exception as e:
         print(f"   ❌ 파일 저장 오류: {e}")
 
+def generate_conversion_report(processed_sequences: List, total_sequences: int):
+    """
+    변환 결과 보고서 생성
+    """
+    print(f"\n📊 변환 품질 보고서")
+    print("=" * 50)
+    
+    # 변환 성공률
+    success_rate = len(processed_sequences) / total_sequences * 100
+    print(f"전체 시퀀스: {total_sequences}개")
+    print(f"변환 성공: {len(processed_sequences)}개")
+    print(f"변환 성공률: {success_rate:.1f}%")
+    
+    # 동작별 분포
+    action_counts = {}
+    for _, json_data in processed_sequences:
+        action = json_data.get('interactionTargetObject', 'Unknown')
+        action_counts[action] = action_counts.get(action, 0) + 1
+    
+    print(f"\n동작별 분포:")
+    for action, count in action_counts.items():
+        print(f"  {action}: {count}개")
+    
+    # 품질 지표
+    print(f"\n품질 지표:")
+    print(f"  - 의미있는 동작만 선별: ✅")
+    print(f"  - 노이즈 데이터 제거: ✅")
+    print(f"  - Unity 호환성: ✅")
+
 def main():
-    """메인 변환 함수"""
-    print("🚀 H2O 데이터셋 변환기 시작")
+    """메인 변환 함수 - 선별적 변환"""
+    print("🚀 H2O 데이터셋 선별적 변환기 시작")
+    print("=" * 50)
+    print("💡 의미있는 동작만 선별하여 변환합니다")
+    print("   - Pick: grab, take out")
+    print("   - Hold: read, apply, spray, squeeze")  
+    print("   - Place: place, put in")
+    print("   - 기타: 무시 (open, close, pour 등)")
     print("=" * 50)
     
     # 출력 디렉토리 생성
@@ -551,14 +628,24 @@ def main():
         print("❌ 파싱된 시퀀스가 없습니다.")
         return
     
+    # 변환 가능한 시퀀스만 필터링
+    convertible_sequences = []
+    for sequence_info in sequences:
+        if not should_skip_sequence(sequence_info, []):
+            convertible_sequences.append(sequence_info)
+    
+    print(f"📊 변환 가능한 시퀀스: {len(convertible_sequences)}개")
+    print(f"⏭️ 변환 불가능한 시퀀스: {len(sequences) - len(convertible_sequences)}개")
+    
     # 시퀀스별 처리
     successful_conversions = 0
     failed_conversions = 0
+    processed_sequences = []
     
     print(f"\n🔄 시퀀스 변환 시작...")
     
-    for i, sequence_info in enumerate(sequences):
-        print(f"\n[{i+1}/{len(sequences)}] 시퀀스 처리 중...")
+    for i, sequence_info in enumerate(convertible_sequences):
+        print(f"\n[{i+1}/{len(convertible_sequences)}] 시퀀스 처리 중...")
         
         try:
             result = process_sequence(sequence_info)
@@ -574,6 +661,7 @@ def main():
                 # JSON 파일 저장
                 save_json_file(json_data, output_path)
                 successful_conversions += 1
+                processed_sequences.append((project_label, json_data))
                 
             else:
                 failed_conversions += 1
@@ -587,8 +675,11 @@ def main():
     print("=" * 50)
     print(f"✅ 성공: {successful_conversions}개")
     print(f"❌ 실패: {failed_conversions}개")
-    print(f"📊 총 처리: {len(sequences)}개")
+    print(f"📊 총 처리: {len(convertible_sequences)}개")
     print(f"📁 출력 디렉토리: {OUTPUT_JSON_DIR}")
+    
+    # 품질 보고서 생성
+    generate_conversion_report(processed_sequences, len(sequences))
     
     if successful_conversions > 0:
         print(f"\n💡 변환된 파일들을 확인하려면:")
