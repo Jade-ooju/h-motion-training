@@ -6,10 +6,10 @@ import glob
 
 # --- 1. 설정 변수 정의 ---
 # JSON 파일들이 저장된 폴더 경로를 지정하세요.
-# 현재 스크립트와 같은 폴더에 'data' 폴더가 있다고 가정합니다.
+# 프로젝트 루트의 'Data' 폴더를 참조합니다.
 import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
-DATA_DIRECTORY = os.path.join(script_dir, "..", "Data")
+DATA_DIRECTORY = os.path.join(script_dir, "..", "..", "Data")
 
 # 모든 시퀀스의 길이를 통일하기 위한 최대 프레임 수
 # (예: 5초 * 60fps = 300)
